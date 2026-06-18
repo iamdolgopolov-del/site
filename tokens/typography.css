@@ -1,0 +1,39 @@
+/* ============================================================
+   Иллюстратор 2030 — Typography tokens
+   Onest everywhere. Headings sit at weight 500 (Medium) with a
+   slight negative tracking; body is 400 (Regular). Bold (700)
+   is reserved for the wordmark and small eyebrow labels.
+   ============================================================ */
+:root {
+  /* ---- Families ---- */
+  --font-sans: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-secondary: 'Manrope', var(--font-sans);
+
+  /* ---- Weights ---- */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium: 500;   /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold: 700;     /* @kind font */
+
+  /* ---- Type scale (px values from the macro landing page) ---- */
+  --text-display: 58px;  /* hero H1 */
+  --text-h1: 50px;       /* section titles */
+  --text-h2: 30px;       /* sub-section */
+  --text-h3: 22px;       /* card titles */
+  --text-lead: 20px;     /* lead paragraph */
+  --text-body: 16px;     /* body copy */
+  --text-sm: 14px;       /* labels, chips, nav */
+  --text-xs: 12px;       /* captions */
+  --text-2xs: 11px;      /* legal / fine print */
+
+  /* ---- Line heights ---- */
+  --lh-tight: 1;      /* @kind font */
+  --lh-snug: 1.1;     /* @kind font */
+  --lh-normal: 1.3;   /* @kind font */
+  --lh-relaxed: 1.34; /* @kind font */
+
+  /* ---- Letter spacing ---- */
+  --tracking-tight: -0.01em;  /* @kind font */
+  --tracking-fine: -0.03em;   /* @kind font */
+  --tracking-normal: 0; /* @kind font */
+}

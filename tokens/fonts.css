@@ -1,0 +1,13 @@
+/* ============================================================
+   Иллюстратор 2030 — Webfonts
+   Onest is the brand typeface (UI + headings). Manrope is the
+   secondary/utility face used in dense map/spec contexts.
+   Both are loaded from Google Fonts — they are the exact
+   families used in the source Figma file, so no substitution.
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+/* Onest exposes the same family name across weights, so these
+   @font-face stubs simply document the shipped faces for the
+   compiler / consumers. The real binaries arrive via the
+   @import above (Google Fonts CDN). */

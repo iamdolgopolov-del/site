@@ -1,0 +1,53 @@
+/* ============================================================
+   Иллюстратор 2030 — Spacing, radii, shadows, effects
+   4px base grid. Generous, rounded cards on a soft canvas with
+   light drop shadows; a glass blur on floating pills.
+   ============================================================ */
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Page rhythm */
+  --gutter: 40px;          /* page side padding on the macro */
+  --section-gap: 80px;     /* vertical gap between sections */
+  --content-max: 1286px;   /* inner content width */
+
+  /* ---- Radii ---- */
+  --radius-xs: 7px;    /* small chips, tiny cards */
+  --radius-sm: 10px;   /* inputs, list rows */
+  --radius-md: 15px;   /* nested cards */
+  --radius-lg: 20px;   /* standard cards */
+  --radius-xl: 30px;   /* hero imagery, big panels */
+  --radius-pill: 999px;
+
+  /* ---- Shadows ---- */
+  --shadow-xs: 0 2px 2px rgba(0,0,0,0.05);
+  --shadow-sm: 0 4px 4px rgba(0,0,0,0.10);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.10);
+  --shadow-lg: 0 16px 40px rgba(0,0,0,0.15);
+
+  /* hairline inner border, used in place of a real border on cards/inputs */
+  --ring-hairline: inset 0 0 0 1px var(--border-strong);
+  --ring-faint: inset 0 0 0 1px var(--border-faint);
+
+  /* ---- Effects ---- */
+  --glass-blur: blur(10px); /* @kind other */
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --dur-fast: 120ms; /* @kind other */
+  --dur: 200ms; /* @kind other */
+  --dur-slow: 320ms; /* @kind other */
+}

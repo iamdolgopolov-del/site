@@ -1,0 +1,70 @@
+/* ============================================================
+   Иллюстратор 2030 — Color tokens
+   Cool light-gray canvas + deep indigo brand, warm green for
+   confirmation/checks and a hot red for high-energy accents.
+   Sampled directly from the course landing-page Figma.
+   ============================================================ */
+:root {
+  /* ---- Base neutrals ---- */
+  --white: #ffffff;
+  --black: #000000;
+  --ink-900: #181818;   /* primary text */
+  --ink-700: #2b2b2b;
+  --ink-600: #6b6b6b;   /* muted text, hairline borders */
+  --ink-400: #b6b6b6;   /* disabled, placeholder */
+  --ink-300: #c7c3c3;   /* light dividers */
+  --ink-200: #e7eaed;   /* faint dividers on light */
+
+  /* ---- Surfaces ---- */
+  --surface-canvas: #eef1f5;  /* page background */
+  --surface-raised: #f1f4f8;  /* slightly lifted block on canvas */
+  --surface-card:   #ffffff;  /* cards, inputs on light */
+
+  /* ---- Brand indigo ---- */
+  --indigo-900: #2b2b61;  /* deepest — inputs on dark, deep fills */
+  --indigo-700: #434373;  /* PRIMARY brand — dark sections, fills */
+  --indigo-500: #6a6aa3;  /* hover/lighter brand */
+  --indigo-300: #8989c5;  /* strokes, muted brand text on light */
+  --indigo-100: #d9d9ee;  /* tint fills */
+
+  /* ---- Accent · green (success / checkmarks / monetization) ---- */
+  --green-600: #2da430;
+  --green-500: #3db83d;   /* primary green — checks, "включено" */
+  --green-bright: #21c004;
+  --green-bubble: #e1fec6; /* chat bubble tint */
+
+  /* ---- Accent · red (energy / urgency / highlights) ---- */
+  --red-600: #ff2d44;
+  --red-500: #ff3d4d;
+  --red-400: #ff5f5f;
+
+  /* ---- Hero / brand gradient (red → blue wash over imagery) ---- */
+  --wash-hero: linear-gradient(110deg, rgba(255,58,58,0.30) 0%, rgba(69,81,255,0.30) 100%); /* @kind color */
+
+  /* ============ Semantic aliases ============ */
+  --color-bg:            var(--surface-canvas);
+  --color-surface:       var(--surface-card);
+  --color-surface-sunk:  var(--surface-canvas);
+
+  --text-primary:        var(--ink-900);
+  --text-secondary:      rgba(24,24,24,0.80);  /* body copy on light — 0.8 opacity is the house style */
+  --text-muted:          var(--ink-600);
+  --text-on-brand:       var(--white);
+  --text-on-brand-soft:  rgba(255,255,255,0.80);
+
+  --brand:               var(--indigo-700);
+  --brand-deep:          var(--indigo-900);
+  --brand-hover:         var(--indigo-500);
+  --on-brand:            var(--white);
+
+  --success:             var(--green-500);
+  --danger:              var(--red-600);
+
+  --border:              var(--ink-300);
+  --border-strong:       var(--ink-600);
+  --border-faint:        var(--ink-200);
+  --border-on-brand:     rgba(255,255,255,0.40);
+
+  /* surfaces inside dark indigo sections */
+  --field-on-brand:      var(--indigo-900);
+}

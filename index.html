@@ -1,0 +1,479 @@
+<!-- @dsCard group="Landing" viewport="1366x860" name="Лендинг — Иллюстратор 2030" subtitle="Art-directed course landing: preloader, brush cursor, scroll reveals" -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Иллюстратор 2030 — авторский курс Риты Стой</title>
+
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="site.css" />
+
+<!-- ext-resource-dependency: GSAP + ScrollTrigger + Lenis -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+<script defer src="site.js"></script>
+</head>
+
+<body class="site is-loading">
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="pl-mark">
+    <span class="pl-line"><span>ИЛЛЮСТРАТОР</span></span>
+    <span class="pl-line"><span><em>2030</em></span></span>
+  </div>
+  <div class="pl-bar-wrap"><div class="pl-bar"></div></div>
+  <div class="pl-pct">0%</div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="logo">Школа&nbsp;Риты&nbsp;Стой</div>
+  <div class="header-right">
+    <nav>
+      <a href="#program">Содержание курса</a>
+      <a href="#pricing">Тарифы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <button class="btn btn--accent header-cta" data-contact><span>Написать нам</span></button>
+  </div>
+</header>
+
+<!-- 1 · HERO -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <h1 class="hero-headline" data-reveal-lines>
+        <span class="ln"><span>Станьте иллюстратором,</span></span>
+        <span class="ln"><span>которому <em>платят</em>.</span></span>
+        <span class="ln"><span>За 4 месяца</span></span>
+      </h1>
+      <p class="lead hero-lead" data-fade>Научитесь рисовать из головы, соберёте портфолио для брендов и выйдете на крупные заказы.</p>
+      <div class="hero-ctas" data-fade>
+        <button class="btn btn--accent btn--lg" data-magnetic="0.4" data-goto="#pricing"><span>Записаться на курс →</span></button>
+        <button class="btn btn--ghost btn--lg" data-magnetic="0.3" data-goto="#program"><span>Посмотреть программу ↓</span></button>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-fade>
+      <img src="assets/images/hero-main.webp" alt="Коммерческая иллюстрация" loading="eager" decoding="async" />
+      <span class="tag">Работа с курса</span>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" data-dir="left" data-speed="34">
+    <span class="m">Упаковка <em>✶</em></span><span class="m">Брендинг</span><span class="m out">Персонажи</span>
+    <span class="m">Обложки <em>✶</em></span><span class="m">Настолки</span><span class="m out">Соцсети</span>
+    <span class="m">Айдентика</span><span class="m out">ИИ-инструменты</span>
+  </div>
+</div>
+
+<!-- 3 · PROBLEM -->
+<section class="section wrap">
+  <div class="sec-head">
+    <h2 class="h" data-reveal>ИИ генерирует картинки за секунды. Почему бренды всё ещё ищут иллюстраторов?</h2>
+  </div>
+  <div class="prob-grid">
+    <div class="prob-col" data-fade>
+      <div class="n">01</div>
+      <p class="p">Рисуете хорошо, но платят копейки</p>
+      <div class="arrow">↓</div>
+      <p class="s">Научитесь создавать то, что нужно бизнесу, и назначать свою цену</p>
+    </div>
+    <div class="prob-col" data-fade>
+      <div class="n">02</div>
+      <p class="p">Портфолио есть, но клиенты не приходят</p>
+      <div class="arrow">↓</div>
+      <p class="s">Переупакуете работы так, чтобы бренд сразу видел, что вы решаете его задачу</p>
+    </div>
+    <div class="prob-col" data-fade>
+      <div class="n">03</div>
+      <p class="p">Боитесь, что ИИ заменит</p>
+      <div class="arrow">↓</div>
+      <p class="s">Освоите ИИ как рабочий инструмент и станете быстрее тех, кто его боится</p>
+    </div>
+  </div>
+  <p class="prob-note" data-fade>Брендам нужен иллюстратор, который понимает задачу, мыслит визуально и умеет продавать. <b>Именно этому вы научитесь на курсе.</b></p>
+</section>
+
+<!-- 4 · PERSONAS -->
+<section class="section wrap">
+  <div class="sec-head">
+    <h2 class="h" data-reveal-lines>
+      <span class="ln"><span>Курс для вас,</span></span>
+      <span class="ln"><span><em>если:</em></span></span>
+    </h2>
+  </div>
+  <div class="persona-grid">
+    <article class="persona" data-fade data-cursor>
+      <div class="idx">01</div>
+      <h3>Начинаете с нуля</h3>
+      <p>Хотите рисовать на заказ, но пока не понимаете, хватает ли навыков для коммерции. Начнём с основ и доведём до первых проектов для портфолио.</p>
+    </article>
+    <article class="persona" data-fade data-cursor>
+      <div class="idx">02</div>
+      <h3>Рисуете, но не зарабатываете</h3>
+      <p>Работы есть, а клиентов нет. Или приходят, но с низким бюджетом. Покажем, как упаковать навык и выйти на тех, кто готов платить.</p>
+    </article>
+    <article class="persona" data-fade data-cursor>
+      <div class="idx">03</div>
+      <h3>Хотите выйти на новый уровень дохода</h3>
+      <p>Уже берёте заказы, но хотите повысить чек и работать с брендами: упаковка, айдентика, издательства, настольные игры. Дадим систему и портфолио под эти ниши.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 5 · RESULT -->
+<section class="section wrap">
+  <div class="sec-head">
+    <div class="aside eyebrow" data-fade>Результат</div>
+    <h2 class="h" data-reveal>Что вы получите через 4 месяца</h2>
+  </div>
+  <div class="result-list">
+    <div class="result-row" data-fade><div class="ri">01</div><div class="rt">10+ работ для портфолио</div><div class="rd">Не учебные, а коммерческие: упаковка, брендинг, настольные игры, книжные иллюстрации и не только.</div></div>
+    <div class="result-row" data-fade><div class="ri">02</div><div class="rt">Личный сайт-портфолио</div><div class="rd">Готовая страница, которая отображается в выдаче поисковиков и приводит клиентов. Собираете прямо на курсе.</div></div>
+    <div class="result-row" data-fade><div class="ri">03</div><div class="rt">Навык продавать свои услуги</div><div class="rd">Как находить клиентов, вести переговоры, назначать цену и привязывать клиентов на всю жизнь.</div></div>
+    <div class="result-row" data-fade><div class="ri">04</div><div class="rt">Контент, который приводит заказы</div><div class="rd">Сценарии для вертикальных видео и контент-план, который привлекает платёжеспособных клиентов.</div></div>
+    <div class="result-row" data-fade><div class="ri">05</div><div class="rt">ИИ в работе</div><div class="rd">Мокапы, референсы, анимация — делаете за часы то, что раньше занимало дни.</div></div>
+    <div class="result-row" data-fade><div class="ri">06</div><div class="rt">Заработок во время обучения</div><div class="rd">Выполняете практические задания после уроков, направленные на привлечение заказчиков.</div></div>
+  </div>
+  <div style="margin-top:40px" data-fade>
+    <button class="btn btn--ink btn--lg" data-magnetic="0.4" data-goto="#pricing"><span>Хочу такой результат →</span></button>
+  </div>
+</section>
+
+<!-- 6 · PROGRAM -->
+<section class="section wrap" id="program">
+  <div class="sec-head">
+    <h2 class="h" data-reveal-lines>
+      <span class="ln"><span>Программа: от чистого листа</span></span>
+      <span class="ln"><span>до первых <em>заказов</em></span></span>
+    </h2>
+    <div class="aside eyebrow" data-fade>25+ уроков · 6 модулей · 4 месяца</div>
+  </div>
+  <div class="prog-list" data-accordion>
+    <div class="prog-item open" data-acc-item>
+      <div class="prog-head" data-acc-head data-cursor>
+        <div class="pn">00</div>
+        <div><div class="pt">База рисования</div><div class="pr">Результат: разбираетесь в программе и уверенно рисуете из головы — формы, персонажи, композиция, цвет</div></div>
+        <div class="prog-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div>
+      </div>
+      <div class="prog-body"><div><ul>
+        <li>Интерфейс Procreate / Photoshop / Infinite Painter / Sketchbook</li>
+        <li>Скетчинг и анализ референсов</li>
+        <li>Перспектива, цвет, свет и тень, композиция</li>
+        <li>Анатомия и стилизация</li>
+      </ul></div></div>
+    </div>
+    <div class="prog-item" data-acc-item>
+      <div class="prog-head" data-acc-head data-cursor>
+        <div class="pn">01</div>
+        <div><div class="pt">Портфолио</div><div class="pr">Результат: 10+ готовых коммерческих работ и иллюстрированная книжная обложка</div></div>
+        <div class="prog-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div>
+      </div>
+      <div class="prog-body"><div><ul>
+        <li>Брендинг: персонажи, айдентика, постеры, стикеры</li>
+        <li>Упаковка: печенье, лимонад, крем</li>
+        <li>Обложка для книги</li>
+        <li>Карточки для настольной игры</li>
+      </ul></div></div>
+    </div>
+    <div class="prog-item" data-acc-item>
+      <div class="prog-head" data-acc-head data-cursor>
+        <div class="pn">02</div>
+        <div><div class="pt">Дизайн для бизнеса</div><div class="pr">Результат: умеете собирать макеты, которые можно сразу отдать в печать или на сайт</div></div>
+        <div class="prog-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div>
+      </div>
+      <div class="prog-body"><div><ul>
+        <li>Презентация: текст, шрифты, цвета</li>
+        <li>Визитка для нетворкинга</li>
+      </ul></div></div>
+    </div>
+    <div class="prog-item" data-acc-item>
+      <div class="prog-head" data-acc-head data-cursor>
+        <div class="pn">03</div>
+        <div><div class="pt">Маркетинг и продвижение</div><div class="pr">Результат: ваши соцсети и Pinterest работают на привлечение клиентов</div></div>
+        <div class="prog-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div>
+      </div>
+      <div class="prog-body"><div><ul>
+        <li>Личный сайт</li>
+        <li>Анализ целевых аудиторий заказчиков</li>
+        <li>Контент-план: Reels, сторис, рубрики</li>
+        <li>Сценарии и Pinterest</li>
+        <li>Кейсы в статьи</li>
+      </ul></div></div>
+    </div>
+    <div class="prog-item" data-acc-item>
+      <div class="prog-head" data-acc-head data-cursor>
+        <div class="pn">04</div>
+        <div><div class="pt">Продажи</div><div class="pr">Результат: умеете находить клиентов, вести переговоры и выстраивать повторные заказы</div></div>
+        <div class="prog-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div>
+      </div>
+      <div class="prog-body"><div><ul>
+        <li>Предложения под разные ниши</li>
+        <li>Этапы продаж</li>
+        <li>Работа с возражениями и озвучивание стоимости</li>
+        <li>Нетворкинг в кругах предпринимателей</li>
+      </ul></div></div>
+    </div>
+    <div class="prog-item" data-acc-item>
+      <div class="prog-head" data-acc-head data-cursor>
+        <div class="pn">05</div>
+        <div><div class="pt">Нейросети и ИИ</div><div class="pr">Результат: работаете в 2–5 раз быстрее, используя ИИ как профессиональный инструмент</div></div>
+        <div class="prog-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div>
+      </div>
+      <div class="prog-body"><div><ul>
+        <li>Генерация мокапов для презентации работ</li>
+        <li>Создание референсов и мудбордов</li>
+        <li>Анимация иллюстраций и рекламных роликов</li>
+        <li>Идеи, концепты и композиции с ИИ</li>
+      </ul></div></div>
+    </div>
+    <div class="prog-item" data-acc-item>
+      <div class="prog-head" data-acc-head data-cursor>
+        <div class="pn">06</div>
+        <div><div class="pt">Психология</div><div class="pr">Результат: уверенность в себе, проявленность и спокойствие в работе с клиентами</div></div>
+        <div class="prog-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div>
+      </div>
+      <div class="prog-body"><div><ul>
+        <li>Работа со страхом отказа и тревожностью</li>
+        <li>Преодоление стеснения публичности</li>
+        <li>Устранение прокрастинации</li>
+        <li>Уверенность в ценности своей работы</li>
+      </ul></div></div>
+    </div>
+  </div>
+  <div style="margin-top:36px" data-fade>
+    <button class="btn btn--accent btn--lg" data-magnetic="0.4" data-goto="#pricing"><span>Записаться и получить доступ к программе →</span></button>
+  </div>
+</section>
+
+<!-- 7 · GALLERY -->
+<section class="section wrap gal">
+  <div class="sec-head">
+    <h2 class="h" data-reveal>Работы на обучении</h2>
+    <div class="aside eyebrow" data-fade>От упаковки до книжных иллюстраций</div>
+  </div>
+  <div class="gal-tabs" data-fade>
+    <button class="gal-tab active" data-gal-tab="pack">Упаковка</button>
+    <button class="gal-tab" data-gal-tab="brand">Брендинг</button>
+    <button class="gal-tab" data-gal-tab="book">Книги и настолки</button>
+    <button class="gal-tab" data-gal-tab="social">Дизайн и сайт</button>
+  </div>
+
+  <div data-gal-pane="pack">
+    <div class="gal-grid">
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-pack-1.webp" alt="Крем Botanica" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Крем для рук</span><span class="gmeta">Упаковка · бьюти</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-pack-2.webp" alt="Лимонад Сад" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Лимонад </span><span class="gmeta">Этикетка · напитки</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-pack-3.webp" alt="Печенье Тёплое" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Печенье</span><span class="gmeta">Серия упаковок</span></div></div>
+    </div>
+  </div>
+  <div data-gal-pane="brand" style="display:none">
+    <div class="gal-grid">
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-brand-1.webp" alt="Маскот бренда" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Маскот бренда</span><span class="gmeta">Персонаж · айдентика</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-brand-2.webp" alt="Айдентика кафе" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Айдентика</span><span class="gmeta">Брендинг</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-brand-3.webp" alt="Серия стикеров" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Стикерпак</span><span class="gmeta">Персонажи</span></div></div>
+    </div>
+  </div>
+  <div data-gal-pane="book" style="display:none">
+    <div class="gal-grid">
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-book-1.webp" alt="Обложка романа" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Книжная обложка</span><span class="gmeta">Книга</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-book-2.webp" alt="Книжный разворот" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Разворот</span><span class="gmeta">КНИГА</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-book-3.webp" alt="Карточки настолки" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Карточки</span><span class="gmeta">Настольная игра</span></div></div>
+    </div>
+  </div>
+  <div data-gal-pane="social" style="display:none">
+    <div class="gal-grid">
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-social-1.webp" alt="Контент для Reels" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Личный сайт</span><span class="gmeta">САЙТ</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-social-2.webp" alt="Пост для бренда" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Визитка</span><span class="gmeta">НЕТВОРКИНГ</span></div></div>
+      <div class="gal-card"><div class="gal-img"><img src="assets/images/work-social-3.webp" alt="Слайд презентации" loading="lazy" decoding="async" /></div><div class="gal-cap"><span class="gname">Презентация</span><span class="gmeta">ДЛЯ СОТРУДНИЧЕСТВ</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · AUTHOR -->
+<section class="section author" id="author">
+  <div class="wrap author-grid">
+    <div class="author-photo" data-parallax="0.08"><img src="assets/images/author-portrait.webp" alt="Рита Стой" loading="lazy" decoding="async" /></div>
+    <div>
+      <div class="eyebrow" data-fade>Автор курса</div>
+      <h2 data-fade>Рита Стой — иллюстратор для брендов и <em>гос. организаций</em></h2>
+      <p data-fade>7 лет в коммерческой иллюстрации. Работает со Сбером, Газпромом, Яндексом, Министерством Просвещения и Росмолодёжью. Работала на Всемирном фестивале молодёжи, сотрудничает с маркетинговыми агентствами.</p>
+      <p data-fade>Лучшим студентам Рита передаёт свои заказы и рекомендует агентствам.</p>
+      <div class="author-clients" data-fade>
+        <span>Сбербанк</span><span>Газпром</span><span>Яндекс</span><span>Министерство Просвещения</span><span>Росмолодёжь</span>
+      </div>
+      <div class="author-links" data-fade>
+        <a href="https://www.behance.net/ritaaa_stoi" target="_blank" rel="noopener" class="btn btn--accent" data-magnetic="0.35"><span>Портфолио на Behance</span></a>
+        <a href="https://procreateschool.ru/scribing" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic="0.3" style="box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5);color:#fff"><span>Личный сайт</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · TARIFFS -->
+<section class="section wrap" id="pricing">
+  <div class="sec-head">
+    <div class="aside eyebrow" data-fade>Тарифы</div>
+    <h2 class="h" data-reveal>Выберите формат участия</h2>
+  </div>
+  <div class="tariffs-grid">
+    <div class="tariff" data-fade>
+      <div class="tname">Самостоятельный</div>
+      <div class="tcap">Учитесь в своём темпе</div>
+      <p class="tdesc">Изучайте материалы курса самостоятельно в удобном ритме. Получите всю базу, чтобы начать рисовать и зарабатывать.</p>
+      <ul>
+        <li>Доступ ко всем 6 модулям курса</li>
+        <li>25+ уроков в записи</li>
+        <li>Доступ к материалам 12 месяцев</li>
+        <li>Чат сообщества</li>
+        <li>Полезные материалы, чек-листы, гайды, методички</li>
+        <li>Бонусные материалы</li>
+        <li>Сертификат о прохождении курса</li>
+      </ul>
+      <button class="btn btn--ghost" data-magnetic="0.3" data-goto="#final"><span>Узнать о наличии мест и стоимости</span></button>
+    </div>
+    <div class="tariff feat" data-fade>
+      <div class="tname">С обратной связью ⭐</div>
+      <div class="tcap">Оптимальный для результата</div>
+      <p class="tdesc">Учитесь с поддержкой автора и кураторов. Получаете проверку каждого задания и доходите до результата без застреваний.</p>
+      <ul>
+        <li>Всё из тарифа «Самостоятельный»</li>
+        <li>Доступ к материалам 24 месяца</li>
+        <li>Проверка домашних заданий автором и кураторами</li>
+        <li>4 месяца обратной связи</li>
+        <li>Поддерживающее сообщество</li>
+        <li>Видео-разборы работ</li>
+        <li>Общение в мессенджере</li>
+        <li>Сертификат о прохождении курса</li>
+      </ul>
+      <button class="btn btn--accent" data-magnetic="0.4" data-goto="#final"><span>Узнать о наличии мест и стоимости</span></button>
+    </div>
+    <div class="tariff" data-fade>
+      <div class="tname">Наставничество 🔥</div>
+      <div class="tcap">Максимум внимания автора</div>
+      <p class="tdesc">Личное сопровождение Риты до первых заказов. Индивидуальная стратегия, разборы и доступ к её базе клиентов.</p>
+      <ul>
+        <li>Всё из тарифа «С обратной связью»</li>
+        <li>Доступ к материалам бессрочно</li>
+        <li>Индивидуальные разборы с Ритой</li>
+        <li>Личная стратегия выхода на заказы</li>
+        <li>Передача заказов от автора</li>
+        <li>Помощь в оформлении портфолио</li>
+        <li>Индивидуальные созвоны с автором</li>
+        <li>Приоритетная поддержка · ограниченное число мест</li>
+      </ul>
+      <button class="btn btn--ghost" data-magnetic="0.3" data-goto="#final"><span>Узнать о наличии мест и стоимости</span></button>
+    </div>
+  </div>
+  <p class="tariff-note" data-fade>Доступна официальная рассрочка от банков — без переплаты. Подробности расскажем в переписке.</p>
+</section>
+
+<!-- 10 · FORMAT -->
+<section class="section wrap">
+  <div class="sec-head"><h2 class="h" data-reveal>Как проходит обучение</h2></div>
+  <div class="fmt-grid">
+    <div class="fmt-cell" data-fade><div class="fi">01</div><div class="ft">4 месяца пошаговой программы</div></div>
+    <div class="fmt-cell" data-fade><div class="fi">02</div><div class="ft">4 месяца личной обратной связи от автора</div></div>
+    <div class="fmt-cell" data-fade><div class="fi">03</div><div class="ft">Доступ ко всем материалам — 2 года</div></div>
+    <div class="fmt-cell" data-fade><div class="fi">04</div><div class="ft">Проверка каждого домашнего задания</div></div>
+    <div class="fmt-cell" data-fade><div class="fi">05</div><div class="ft">Персональные разборы работ</div></div>
+    <div class="fmt-cell" data-fade><div class="fi">06</div><div class="ft">Закрытое сообщество: поддержка, нетворкинг, мотивация</div></div>
+    <div class="fmt-cell" data-fade><div class="fi">07</div><div class="ft">Бонусные материалы и шаблоны</div></div>
+    <div class="fmt-cell" data-fade><div class="fi">08</div><div class="ft">Возможность заморозки, если нужна пауза</div></div>
+  </div>
+  <div class="fmt-help" data-fade>
+    <div class="q">Не знаете, какой тариф подойдёт? Напишите — поможем выбрать.</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a href="https://t.me/rita_stoi_school" target="_blank" rel="noopener" class="btn btn--ink" data-magnetic="0.35"><span>Telegram</span></a>
+      <a href="https://wa.me/79260807721" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic="0.3"><span>WhatsApp</span></a>
+      <a href="https://max.ru/u/f9LHodD0cOLl1NgY-ZTwt9rEVBPDajgrJWrQAjN8LKsz0EHinfpfcSERqpM" target="_blank" rel="noopener" class="btn btn--ghost" data-magnetic="0.3"><span>Max</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · FAQ -->
+<section class="section wrap" id="faq">
+  <div class="sec-head"><h2 class="h" data-reveal>Ответы на вопросы</h2></div>
+  <div class="faq-list" data-accordion>
+    <div class="faq-item open" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">Подходит ли курс, если я рисую только на бумаге?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>Да. В модуле 0 разберём все инструменты с нуля: Procreate, Photoshop, Infinite Painter, Sketchbook. Опыт в диджитале не нужен.</p></div></div>
+    </div>
+    <div class="faq-item" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">Сколько времени в неделю нужно уделять курсу?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>В среднем 6–8 часов. Курс легко совмещать с работой — все уроки в записи, смотрите в удобное время.</p></div></div>
+    </div>
+    <div class="faq-item" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">ИИ всё равно вытеснит иллюстраторов, зачем учиться?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>Не вытеснит, а изменит профессию. Бренды ищут тех, кто понимает задачу и создаёт уникальный стиль — это нейросеть не умеет. На курсе вы используете ИИ как инструмент, а не боитесь его.</p></div></div>
+    </div>
+    <div class="faq-item" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">Я уже проходила курсы по рисованию — чем это отличается?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>Большинство курсов учат только рисовать. А этот — рисовать и зарабатывать: портфолио, маркетинг, продажи, клиенты, ИИ.</p></div></div>
+    </div>
+    <div class="faq-item" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">Когда старт и как записаться?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>Напишите нам в удобный мессенджер — сообщим о ближайшем потоке и условиях.</p></div></div>
+    </div>
+    <div class="faq-item" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">Есть ли рассрочка?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>Да. Официальная рассрочка от банков-партнёров без переплаты. Доступ к курсу получаете сразу. Подробности в переписке.</p></div></div>
+    </div>
+    <div class="faq-item" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">Что если у меня не будет получаться?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>Вас сопровождают автор и кураторы: проверяют ДЗ, дают обратную связь, помогают разобраться. Плюс поддерживающее сообщество студентов.</p></div></div>
+    </div>
+    <div class="faq-item" data-acc-item>
+      <div class="faq-head" data-acc-head data-cursor><div class="fq">Я действительно смогу зарабатывать после курса?</div><div class="faq-toggle"><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v12M2 8h12"/></svg></div></div>
+      <div class="faq-body"><div><p>Да, если будете делать задания. Вы получаете навык, портфолио, систему продаж и доступ к заказам.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · FINAL CTA -->
+<section class="section final" id="final">
+  <div class="wrap">
+    <h2 data-reveal-lines>
+      <span class="ln"><span>Сейчас — лучший</span></span>
+      <span class="ln"><span>момент <em>начать</em></span></span>
+    </h2>
+    <p data-fade>Рынок меняется прямо сейчас. Бренды ищут иллюстраторов, которые понимают маркетинг. ИИ вытесняет тех, кто не умеет предлагать уникального. Курс даёт именно то, чего не хватает — и связывает вас с клиентами напрямую.</p>
+    <div class="final-ctas" data-fade>
+      <a href="https://t.me/rita_stoi_school" target="_blank" rel="noopener" class="btn btn--accent btn--lg" data-magnetic="0.4"><span>Telegram</span></a>
+      <a href="https://wa.me/79260807721" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-magnetic="0.3"><span>WhatsApp</span></a>
+      <a href="https://max.ru/u/f9LHodD0cOLl1NgY-ZTwt9rEVBPDajgrJWrQAjN8LKsz0EHinfpfcSERqpM" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-magnetic="0.3"><span>Max</span></a>
+      <a href="https://vk.com/full_illustrator" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-magnetic="0.3"><span>ВКонтакте</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT MODAL -->
+<div class="contact-overlay" id="contact-modal" aria-hidden="true">
+  <div class="contact-dialog" role="dialog" aria-modal="true" aria-label="Написать нам">
+    <button class="contact-close" data-contact-close aria-label="Закрыть">
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3l10 10M13 3L3 13"/></svg>
+    </button>
+    <h3 class="contact-title">Напишите нам</h3>
+    <p class="contact-sub">Выберите удобный мессенджер — расскажем о ближайшем потоке, тарифах и рассрочке.</p>
+    <div class="contact-links">
+      <a class="contact-link tg" href="https://t.me/rita_stoi_school" target="_blank" rel="noopener"><span class="ci">Telegram</span><span class="ca">→</span></a>
+      <a class="contact-link wa" href="https://wa.me/79260807721" target="_blank" rel="noopener"><span class="ci">WhatsApp</span><span class="ca">→</span></a>
+      <a class="contact-link mx" href="https://max.ru/u/f9LHodD0cOLl1NgY-ZTwt9rEVBPDajgrJWrQAjN8LKsz0EHinfpfcSERqpM" target="_blank" rel="noopener"><span class="ci">Max</span><span class="ca">→</span></a>
+      <a class="contact-link vk" href="https://vk.com/full_illustrator" target="_blank" rel="noopener"><span class="ci">ВКонтакте</span><span class="ca">→</span></a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="logo">Школа Риты Стой</div>
+  <div>© 2030 Иллюстратор 2030 · Политика конфиденциальности</div>
+</footer>
+
+</body>
+</html>
